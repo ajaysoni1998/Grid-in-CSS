@@ -1,0 +1,36 @@
+/* adding styles for the desired output without editing html file */
+
+body {
+    margin: 30px;
+}
+
+.container {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 100px);
+}
+
+.box {
+    order: 1;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #525151;
+}
+
+.box:nth-child(even) {
+    color: black;
+    background-color: #ccc;
+}
+
+.box2{
+    order: 9;
+}
+.box1{
+    order: 6;
+}
+.box8{
+    order: 3;
+}

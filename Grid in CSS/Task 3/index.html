@@ -1,0 +1,50 @@
+<!-- grid-auto-row and grid-auto-column are properties in CSS Grid that allow you to define the size of rows and
+columns that are created automatically when the grid items don't explicitly specify their placement in the 
+grid. These properties help control the size of implicitly created rows and columns in a CSS grid.
+
+Here's a code example to demonstrate the use of grid-auto-row and grid-auto-column: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .grid-container {
+            display: grid;
+            padding: 20px;
+            grid-gap: 10px;
+            grid-template-areas: "X X";
+            grid-template-rows: 100px;  /*height of first row*/
+            grid-template-columns: 200px; /*width of first column*/
+            grid-auto-rows: 50px; /* Setting the default height of auto-created rows */
+            grid-auto-columns: 100px; /* Setting the default width of auto-created columns */
+        }
+
+        .grid-item {
+            padding: 10px;
+            background-color: bisque;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>
+<p style="text-align: justify;">In this example, we have a grid container with two columns. Width of 1st column set to 200px and height of 1st row
+set to 100px with grid-auto-rows set to 50px and grid-auto-columns set to 100px. This means that any additional
+rows created beyond the first one will have a height of 50 pixels and  any additional columns created beyond the
+first one will have a width of 100 pixels. The grid items are placed in this grid, and you'll notice that items
+3 to 6 create additional rows with a height of 50px.</p>
